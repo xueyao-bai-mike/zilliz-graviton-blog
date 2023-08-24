@@ -1,1 +1,0 @@
-#Achieve Better Price to Performance for Zilliz on Amazon EKS with Graviton3 Processors
