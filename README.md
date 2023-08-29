@@ -14,7 +14,7 @@ The common practice in the field of generative AI and deep learning is to store 
 
 ## About Zilliz
 
-Zilliz description section
+Zilliz is built by the engineers and scientists who created LF AI Milvus®, an open-source vector database for production ready AI. On a mission to unleash data insights with AI, the company builds the database and search technologies to help organizations create AI/ML applications stunningly easy and fast.
 
 ## About Amazon Graviton
 AWS Graviton processors are designed by AWS to deliver the best price performance for your cloud workloads running in Amazon EC2.
@@ -26,6 +26,10 @@ AWS Graviton3 processors are the latest in the AWS Graviton processor family. Th
 Yuan Quan will continue here
 
 ### Zilliz Benchmark Tools & Dataset Introduction
+
+VDBBench https://github.com/zilliztech/VDBBench
+
+Cohere https://huggingface.co/datasets/Cohere/wikipedia-22-12/tree/main/en
 
 ### Methodology
 
