@@ -47,7 +47,7 @@ We are using Cohere https://huggingface.co/datasets/Cohere/wikipedia-22-12/tree/
 
 请袁泉老师参考下tidb这个综述实验环境设置的部分，也综述下咱们的情况
 
-Our test used two industry standard OLTP benchmarks: TPC-C and sysbench. TPC-C tests the OLTP system by using a commodity sales model that involves five different transaction types. TPC-C generally works for any database which handles OLTP workloads. Sysbench is a well-established tool that runs synthetic benchmarks of MySQL and the hardware it runs on. It also has an option to execute OLTP workloads on a MySQL database. Since TiDB is MySQL compatible, sysbench will be a good reference as well.
+Our test used two industry standard OLTP benchmarks: TPC-C and sysbench. TPC-C tests the OLTP system by using a commodity sales model that involves five different transaction types. TPC-C generally works for any database which handles OLTP workloads. Sysbench is a well-established tool that runs synthetic benchmarks of MySQL and the hardware it runs on. It also has an option to execute OLTP workloads on a MySQL database. Since TiDB is MySQL compatible, sysbench will be a good reference as well
 
 
 ### Milvus Installation
