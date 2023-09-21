@@ -47,7 +47,15 @@ We are using Cohere https://huggingface.co/datasets/Cohere/wikipedia-22-12/tree/
 
 请袁泉老师参考下tidb这个综述实验环境设置的部分，也综述下咱们的情况
 
-Our test used two industry standard OLTP benchmarks: TPC-C and sysbench. TPC-C tests the OLTP system by using a commodity sales model that involves five different transaction types. TPC-C generally works for any database which handles OLTP workloads. Sysbench is a well-established tool that runs synthetic benchmarks of MySQL and the hardware it runs on. It also has an option to execute OLTP workloads on a MySQL database. Since TiDB is MySQL compatible, sysbench will be a good reference as well
+Our test used two industry standard OLTP benchmarks: TPC-C and sysbench. TPC-C tests the OLTP system by using a commodity sales model that involves five different transaction types. TPC-C generally works for any database which handles OLTP workloads. Sysbench is a well-established tool that runs synthetic benchmarks of MySQL and the hardware it runs on. It also has an option to execute OLTP workloads on a MySQL database. Since TiDB is MySQL compatible, sysbench will be a good reference as well.
+
+We use the HNSW algorithm to index the Cohere 1M dataset. The HNSW (Hierarchical Navigable Small World) algorithm is an approximate nearest neighbor (ANN) algorithm used for indexing and searching high-dimensional data. It aims to address the challenges of fast nearest neighbor search in high-dimensional spaces where traditional exact k-nearest neighbors algorithm are inefficient. hnsw  algorithm has several parameters that you can configure to customize its behavior.  
+
+* M: This parameter controls the maximum number of connections a data point can have in the hierarchical graph. 
+* **fConstruction**: It stands for "ef Construction," and it controls the size of the dynamic list during the construction of the graph.
+* **efSearch**: This parameter is used during the search phase and controls the size of the dynamic list while searching for nearest neighbors. A larger efSearch value can lead to a more exhaustive search but also increases query time.
+
+In our tests, we select the same parameters for both ARM64 and X86 platforms
 
 
 ### Milvus Installation
@@ -152,5 +160,4 @@ We encourage readers to try Graviton3 whenever possible and feel the pricing to 
 ## Reference
 * VDBBench https://github.com/zilliztech/VectorDBBench
 * Cohere https://huggingface.co/datasets/Cohere/wikipedia-22-12/tree/main/en
-
 
