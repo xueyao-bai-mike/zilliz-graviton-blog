@@ -42,12 +42,7 @@ We are using VectorDBBench to perform test. VectorDBBench is a go-to tool for th
 
 We are using Cohere https://huggingface.co/datasets/Cohere/wikipedia-22-12/tree/main/en as testing dataset.
 
-
 ### Methodology
-
-请袁泉老师参考下tidb这个综述实验环境设置的部分，也综述下咱们的情况
-
-Our test used two industry standard OLTP benchmarks: TPC-C and sysbench. TPC-C tests the OLTP system by using a commodity sales model that involves five different transaction types. TPC-C generally works for any database which handles OLTP workloads. Sysbench is a well-established tool that runs synthetic benchmarks of MySQL and the hardware it runs on. It also has an option to execute OLTP workloads on a MySQL database. Since TiDB is MySQL compatible, sysbench will be a good reference as well.
 
 We use the HNSW algorithm to index the Cohere 1M dataset. The HNSW (Hierarchical Navigable Small World) algorithm is an approximate nearest neighbor (ANN) algorithm used for indexing and searching high-dimensional data. It aims to address the challenges of fast nearest neighbor search in high-dimensional spaces where traditional exact k-nearest neighbors algorithm are inefficient. hnsw  algorithm has several parameters that you can configure to customize its behavior.  
 
@@ -58,6 +53,7 @@ We use the HNSW algorithm to index the Cohere 1M dataset. The HNSW (Hierarchical
 In our tests, we select the same parameters for both ARM64 and X86 platforms. 
 
 We have implemented AVX512, AVX2, and SSE4 SIMD intrinsic optimizations on the x86 platform to accelerate vector distance calculations, On the ARM platform, we have implemented NEON and SVE SIMD intrinsic optimizations. In this bench, we primarily compare the performance between using AVX512 on the x86 platform and SVE on the ARM platform.
+
 
 
 ### Milvus Installation
@@ -155,7 +151,7 @@ After above test running against m6i (Intel) m7g(Graviton3), we have final resul
 
 ## Summary
 
-Our test shows that general performance of Milvus&Zilliz Cloud on Graviton3 (m7g) achieve better QPS than Intel Xeon Platinum 8375C (m6i). We can also notice Zilliz Cloud achieve 5x better performance than latest Milvus v2.3. This echos Zilliz's [leaderboard]( https://zilliz.com/vector-database-benchmark-tool)
+Our test shows that general performance of Milvus&Zilliz Cloud on Graviton3 (m7g) achieve better QPS than Intel Xeon Platinum 8375C (m6i). 
 
 We encourage readers to try Graviton3 whenever possible and feel the pricing to performance improvement in Graviton3.
 
