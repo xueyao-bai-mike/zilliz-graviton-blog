@@ -33,7 +33,7 @@ Specific details is shown in below table:
 <sub> _Graviton3 (m7g) VS Intel Xeon Platinum 8375C (m6i)_ <sub>
 * OS and Storages:
     * AMI：Amazon Linux 2023 AMI(latest version)
-    * EBS：gp3, 80G(keep default performance level, Throughput 125MB/s, IOPS 3000)
+    * EBS：GP3, 80G(keep default performance level, Throughput 125MB/s, IOPS 3000)
 
 
 ### Zilliz Benchmark Tools & Dataset Introduction
@@ -151,11 +151,12 @@ After above test running against m6i (Intel) m7g(Graviton3), we have final resul
 
 ## Summary
 
-Our test shows that general performance of Milvus&Zilliz Cloud on Graviton3 (m7g) achieve better QPS than Intel Xeon Platinum 8375C (m6i). 
+Our test shows that general performance of Zilliz Cloud on Graviton3 (m7g) achieve better QPS (19.2%) than Intel Xeon Platinum 8375C (m6i). Take the price into consideration, our result shows Graviton3 can bring up to 41% increase compare to x86 processors in m6i series intance.
 
 We encourage readers to try Graviton3 whenever possible and feel the pricing to performance improvement in Graviton3.
 
 ## Reference
 * VDBBench https://github.com/zilliztech/VectorDBBench
 * Cohere https://huggingface.co/datasets/Cohere/wikipedia-22-12/tree/main/en
+* AWS EC2 Pricing https://aws.amazon.com/ec2/pricing/on-demand/
 
