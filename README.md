@@ -59,7 +59,7 @@ We have implemented AVX512, AVX2, and SSE4 SIMD intrinsic optimizations on the x
 ### Milvus Installation
 
 * Logon SUT EC2 instance above with SSH session separately.
-* Perform following commands to setup Milvus 2.3 benchmark environment:
+* Perform following commands to setup Milvus 2.3.2 benchmark environment:
 
 ```
 sudo su - root
@@ -76,14 +76,14 @@ mv docker-compose /usr/bin/
 ## Start milvus container
 mkdir ~/milvus
 cd ~/milvus
-wget https://github.com/milvus-io/milvus/releases/download/v2.3.0/milvus-standalone-docker-compose.yml \
+wget https://github.com/milvus-io/milvus/releases/download/v2.3.2/milvus-standalone-docker-compose.yml \
   -O docker-compose.yml
 docker-compose up -d
 docker-compose ps
 
 ```
 
-After above steps, you should get Milvus v2.3.0 running on both instances. 
+After above steps, you should get Milvus v2.3.2 running on both instances. 
 ### VectorDBBench installation
 
 We will install VectorDBBench on LoadGen instance, follow below steps to complete.
@@ -146,12 +146,14 @@ Visit VectorDBBench Web Console via External URL, make sure you have allowed por
 After above test running against m6i (Intel) m7g(Graviton3), we have final result as below:
 
 <picture>
- <img alt="YOUR-ALT-TEXT" src="assets/compare.png">
+ <img alt="YOUR-ALT-TEXT" src="assets/compare_1.png">
 </picture>
 
 ## Summary
 
-Our test shows that general performance of Zilliz Cloud on Graviton3 (m7g) achieve better QPS (19.2%) than Intel Xeon Platinum 8375C (m6i). Take the price into consideration, our result shows Graviton3 can bring up to 41% increase compare to x86 processors in m6i series intance.
+Our test shows that general performance of Zilliz Cloud on Graviton3 (m7g) achieve better QPS (21.85%) than Intel Xeon Platinum 8375C (m6i). 
+Milvus 2.3.2 on Graviton3(m7g) is also providing 13.65% gain on QPS compare to Intel on m6i machine.
+Take the price into consideration, our result shows Graviton3 can bring up to 41% increase compare to x86 processors in m6i series intance.
 
 We encourage readers to try Graviton3 whenever possible and feel the pricing to performance improvement in Graviton3.
 
