@@ -146,7 +146,7 @@ Visit VectorDBBench Web Console via External URL, make sure you have allowed por
 After above test running against m6i (Intel) m7g(Graviton3), we have final result as below:
 
 <picture>
- <img alt="YOUR-ALT-TEXT" src="assets/compare_1.png">
+ <img alt="YOUR-ALT-TEXT" src="assets/compare_2.png">
 </picture>
 
 ## Summary
