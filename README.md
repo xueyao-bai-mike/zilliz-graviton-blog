@@ -52,7 +52,7 @@ We use the HNSW algorithm to index the Cohere 1M dataset. The HNSW (Hierarchical
 
 In our tests, we select the same parameters for both ARM64 and X86 platforms. 
 
-We have implemented AVX512, AVX2, and SSE4 SIMD intrinsic optimizations on the x86 platform to accelerate vector distance calculations, On the ARM platform, we have implemented NEON and SVE SIMD intrinsic optimizations. In this bench, we primarily compare the performance between using AVX512 on the x86 platform and SVE on the ARM platform.
+We have implemented AVX512, AVX2, and SSE4 SIMD intrinsic optimizations on the x86 platform to accelerate vector distance calculations, On the ARM platform, we have implemented NEON and SVE SIMD intrinsic optimizations. In this bench, we will compare the performance on x86 platform and the latest ARM one for both Milvus and ZillizCloud.
 
 
 
