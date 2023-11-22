@@ -14,7 +14,7 @@ The common practice in the field of generative AI and deep learning is to store 
 
 ## About Zilliz
 
-Zilliz is built by the engineers and scientists who created LF AI Milvus®, an open-source vector database for production ready AI. On a mission to unleash data insights with AI, the company builds the database and search technologies to help organizations create AI/ML applications stunningly easy and fast.
+Zilliz is built by the engineers and scientists who created LF AI Milvus®, an open-source vector database for production ready AI. With the mission of democratizing AI, Zilliz develops streamlined AI data management infrastructure for enterprise-level AI applications. Among them, Milvus has been trusted by more than 1,000 enterprise users around the world, and has been downloaded and installed more than 6 million times. Zilliz Cloud, a cloud-native fully managed cloud service based on Milvus, has been launched globally, on AWS and other main public cloud providers worldwide.
 
 ## About Amazon Graviton
 AWS Graviton processors are designed by AWS to deliver the best price performance for your cloud workloads running in Amazon EC2.
@@ -135,7 +135,7 @@ Visit VectorDBBench Web Console via External URL, make sure you have allowed por
 
 ### Explore Result 
 
-* After all bechmark tests complete, you can find result via SSH session
+* After all bechmark tests complete, you can find result via VectorDBBench WebUI
 
 <picture>
  <img alt="YOUR-ALT-TEXT" src="assets/result.png">
@@ -146,7 +146,7 @@ Visit VectorDBBench Web Console via External URL, make sure you have allowed por
 After above test running against m6i (Intel) m7g(Graviton3), we have final result as below:
 
 <picture>
- <img alt="YOUR-ALT-TEXT" src="assets/compare_2.png">
+ <img alt="YOUR-ALT-TEXT" src="assets/compare.png">
 </picture>
 
 ## Summary
