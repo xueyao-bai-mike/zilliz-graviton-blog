@@ -153,7 +153,7 @@ After above test running against m6i (Intel) m7g(Graviton3), we have final resul
 
 Our test shows that general performance of Zilliz Cloud on Graviton3 (m7g) achieve better QPS (21.85%) than Intel Xeon Platinum 8375C (m6i). 
 Milvus 2.3.2 on Graviton3(m7g) is also providing 13.65% gain on QPS compare to Intel on m6i instance.
-Take the price into consideration, our result shows Graviton3 can bring up to 41% increase compare to x86 processors on m6i series intance.
+Take the price into consideration, our result shows Graviton3 can bring up to 41% increase compare to x86 processors on m6i series instance.
 
 We encourage readers to try Graviton3 whenever possible and feel the pricing to performance improvement on Graviton3.
 
