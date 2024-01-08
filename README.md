@@ -33,7 +33,7 @@ Specific details is shown in below table:
 <sub> _Graviton3 (m7g) VS Intel Xeon Platinum 8375C (m6i)_ <sub>
 * OS and Storages:
     * AMI：Amazon Linux 2023 AMI(latest version)
-    * EBS：GP3, 80G(keep default performance level, Throughput 125MB/s, IOPS 3000)
+    * EBS：GP3, 80GB(keep default performance level, Throughput 125MB/s, IOPS 3000)
 
 
 ### Zilliz Benchmark Tools & Dataset Introduction
