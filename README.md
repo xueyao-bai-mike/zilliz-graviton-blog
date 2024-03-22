@@ -4,7 +4,7 @@
  <img alt="YOUR-ALT-TEXT" src="assets/milvus_brand.png">
 </picture>
 
-<sub> _ AWS post by Xueyao Bai & Quan Yuan & Wantao Wu, Solution Architect _ <sub>
+<sub> _AWS post by Xueyao Bai & Quan Yuan & Wantao Wu, Solution Architect_ <sub>
 
 The popularity of generative AI (Generative AI) has aroused widespread attention and completely ignited the vector database market. 
 
